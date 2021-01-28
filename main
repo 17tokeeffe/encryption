@@ -1,0 +1,130 @@
+shifta=int(input("A: "))
+shiftb=int(input("B: "))
+shiftc=int(input("C: "))
+count=1
+while True:
+	letter=input("Type Letter")
+	if letter=="a":
+		number=6
+	elif letter=="b":
+		number=14
+	elif letter=="c":
+		number=2
+	elif letter=="d":
+		number=24
+	elif letter=="e":
+		number=11
+	elif letter=="f":
+		number=17
+	elif letter=="g":
+		number=3
+	elif letter=="h":
+		number=20
+	elif letter=="i":
+		number=25
+	elif letter=="j":
+		number=12
+	elif letter=="k":
+		number=1
+	elif letter=="l":
+		number=18
+	elif letter=="m":
+		number=26
+	elif letter=="n":
+		number=10
+	elif letter=="o":
+		number=21
+	elif letter=="p":
+		number=4
+	elif letter=="q":
+		number=8
+	elif letter=="r":
+		number=19
+	elif letter=="s":
+		number=7
+	elif letter=="t":
+		number=13
+	elif letter=="u":
+		number=23
+	elif letter=="v":
+		number=9
+	elif letter=="w":
+		number=5
+	elif letter=="x":
+		number=15
+	elif letter=="y":
+		number=22
+	elif letter=="z":
+		number=16
+	number=number + shifta
+	if number>26 :
+		number=number - 26
+	shifta = shifta + 1
+	if shifta>26 :
+		shifta=shifta - 26
+		shiftb = shiftb+1
+	number=number + shiftb
+	if number>26 :
+		number=number - 26
+	if shiftb>26 :
+		shiftb=shiftb - 26
+		shiftc=shiftc + 1
+	number=number + shiftc
+	if number>26 :
+		number=number - 26
+	if shiftc>26 :
+		shiftc=shiftc - 26
+	number=number
+	if number==6 :
+		letter="a"
+	elif number==14 :
+		letter="b"
+	elif number==2 :
+		letter="c"
+	elif number==24 :
+		letter="d"
+	elif number==11 :
+		letter="e"
+	elif number==17 :
+		letter="f"	
+	elif number==3 :
+		letter="g"
+	elif number==20 :
+		letter="h"
+	elif number==25 :
+		letter="i"
+	elif number==12 :
+		letter="j"
+	elif number==1 :
+		letter="k"
+	elif number==18 :
+		letter="l"
+	elif number==26 :
+		letter="m"
+	elif number==10 :
+		letter="n"
+	elif number==21 :
+		letter="o"
+	elif number==4 :
+		letter="p"
+	elif number==8 :
+		letter="q"
+	elif number==19 :
+		letter="r"
+	elif number==7 :
+		letter="s"
+	elif number==13 :
+		letter="t"
+	elif number==23 :
+		letter="u"
+	elif number==9 :
+		letter="v"
+	elif number==5 :
+		letter="w"
+	elif number==15 :
+		letter="x"
+	elif number==22 :
+		letter="y"
+	elif number==16 :
+		letter="z"
+	print(letter)
